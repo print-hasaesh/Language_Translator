@@ -1,24 +1,57 @@
-# Language_Translator
+Language_Translator
 
-Simple English ↔ Nepali translator with a popup GUI.
+A simple English ↔ Nepali translator with a popup GUI built in Tkinter.
+Works online via Google Translate (through deep-translator) and is threaded so the GUI never freezes.
+
+Features
+
+Translate English → Nepali and Nepali → English.
+
+Threaded GUI to prevent freezing during translation.
+
+Copy output to clipboard with one click.
+
+Clear input easily.
+
+Lightweight and portable; works on Windows, Linux, and macOS.
 
 Setup
------
 
-1. (Optional) Create a virtualenv, then install dependencies:
+(Optional) Create a virtual environment:
 
-```bash
+python -m venv .venv
+
+
+Activate it:
+
+Windows:
+
+.venv\Scripts\activate
+
+
+Linux / macOS:
+
+source .venv/bin/activate
+
+
+Install dependencies:
+
 pip install -r requirements.txt
-```
 
-2. Run the GUI:
 
-```bash
+requirements.txt:
+
+tk
+deep-translator
+
+Running the GUI
 python Translator_main.py
-```
 
-Notes
------
-- The translator uses `googletrans` when available and falls back to a tiny built-in dictionary otherwise.
-- If you don't want to install `googletrans`, the fallback still translates a few common phrases.
-Check 
+
+Enter text in the input box.
+
+Choose the translation direction (English → Nepali or Nepali → English).
+
+Click Translate.
+
+Copy output with Copy Output, or clear input with Clear.
