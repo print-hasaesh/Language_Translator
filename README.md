@@ -1,4 +1,5 @@
-Language_Translator
+Language_Translator 
+English to Nepali
 
 A simple English ↔ Nepali translator with a popup GUI built in Tkinter.
 Works online via Google Translate (through deep-translator) and is threaded so the GUI never freezes.
